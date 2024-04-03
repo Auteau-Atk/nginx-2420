@@ -1,3 +1,6 @@
+# What is nginx?
+Nginx is a free, open source, and high performance HTTP web server. It is know for it's stability and  simple configuration. We will be using Nginx to make a begginer website using an archlinux droplet by Digital Ocean.
+
 # Update Pacman
 
 First, update pacman before starting a project. (Good practice)
