@@ -103,7 +103,7 @@ This is where we setup our ```listen``` and ```domain ip```. First, make the fil
 sudo  vim  /etc/nginx/sites-available/nginx-2420
 
 ```
-
+Vim is our test editor where we can write code for our files.
 Paste this.
 
 ```bash
