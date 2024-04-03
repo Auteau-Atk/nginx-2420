@@ -31,6 +31,7 @@ Instead of changing the ```/usr/share/nginx/html/index.html``` file nginx comes 
 mkdir  -p  /web/html/nginx-2420
 
 ```
+```mkdir``` creates a directory and ```-p``` allows multiple directories to be created
 
 This command creates ```/web```, ```/html``` and, ```/nginx-2420``` in 1 command.
 
@@ -39,6 +40,12 @@ This command creates ```/web```, ```/html``` and, ```/nginx-2420``` in 1 command
 Before making our own configuration file, we need to setup the original ```/etc/nginx/nginx.conf```, while it does have configurations that work with ```/usr/share/nginx/html/index.html```, it may error with ```could not build optimal types_hash```.  
 
 Instead, we will edit the configuration using an example configuration given in the arch linux wiki.
+
+```bash 
+sudo  vim /etc/nginx/nginx.conf
+```
+
+```vim``` is our text editor where we can write code for our files.
 
 ```bash
 
@@ -103,7 +110,6 @@ This is where we setup our ```listen``` and ```domain ip```. First, make the fil
 sudo  vim  /etc/nginx/sites-available/nginx-2420
 
 ```
-Vim is our test editor where we can write code for our files.
 Paste this.
 
 ```bash
@@ -160,6 +166,8 @@ sudo systemctl start nginx.service
 # Restart server if changes were made
 sudo systemctl restart nginx.service
 ```
+
+```sytemctl``` is a command line tool that monitors our system and interacrs with our systemd, service managers, etc.
 
 # Step 8: Create HTML file
 We can now create our HTML file.
